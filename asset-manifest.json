@@ -1,0 +1,31 @@
+{
+  "files": {
+    "app.js": "/Sticker-Smash/static/js/app.dda7cb08.chunk.js",
+    "app.js.map": "/Sticker-Smash/static/js/app.dda7cb08.chunk.js.map",
+    "runtime~app.js": "/Sticker-Smash/static/js/runtime~app.ef11ab20.js",
+    "runtime~app.js.map": "/Sticker-Smash/static/js/runtime~app.ef11ab20.js.map",
+    "static/js/2.e7f49bc6.chunk.js": "/Sticker-Smash/static/js/2.e7f49bc6.chunk.js",
+    "static/js/2.e7f49bc6.chunk.js.map": "/Sticker-Smash/static/js/2.e7f49bc6.chunk.js.map",
+    "fonts/FontAwesome.ttf": "/Sticker-Smash/./fonts/FontAwesome.ttf",
+    "fonts/MaterialIcons.ttf": "/Sticker-Smash/./fonts/MaterialIcons.ttf",
+    "favicon-16.png": "/Sticker-Smash/favicon-16.png",
+    "favicon-32.png": "/Sticker-Smash/favicon-32.png",
+    "favicon.ico": "/Sticker-Smash/favicon.ico",
+    "index.html": "/Sticker-Smash/index.html",
+    "manifest.json": "/Sticker-Smash/manifest.json",
+    "serve.json": "/Sticker-Smash/serve.json",
+    "static/js/2.e7f49bc6.chunk.js.LICENSE.txt": "/Sticker-Smash/static/js/2.e7f49bc6.chunk.js.LICENSE.txt",
+    "static/media/background-image.png": "/Sticker-Smash/static/media/background-image.979cd865.png",
+    "static/media/emoji1.png": "/Sticker-Smash/static/media/emoji1.7df01aee.png",
+    "static/media/emoji2.png": "/Sticker-Smash/static/media/emoji2.5685d9a2.png",
+    "static/media/emoji3.png": "/Sticker-Smash/static/media/emoji3.d02b4d80.png",
+    "static/media/emoji4.png": "/Sticker-Smash/static/media/emoji4.9f86a388.png",
+    "static/media/emoji5.png": "/Sticker-Smash/static/media/emoji5.3ca0d7e3.png",
+    "static/media/emoji6.png": "/Sticker-Smash/static/media/emoji6.e2cad3fa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.ef11ab20.js",
+    "static/js/2.e7f49bc6.chunk.js",
+    "static/js/app.dda7cb08.chunk.js"
+  ]
+}
