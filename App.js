@@ -10,7 +10,7 @@ import EmojiPicker from "./components/EmojiPicker";
 import EmojiList from "./components/EmojiList";
 import EmojiSticker from "./components/EmojiSticker";
 import * as MediaLibrary from "expo-media-library";
-import domtoimage from 'dom-to-image';
+import domtoimage from "dom-to-image";
 import { captureRef } from "react-native-view-shot";
 import { useState, useRef } from "react";
 
@@ -40,8 +40,12 @@ export default function App() {
     setIsModalVisible(false);
   };
 
+  if (status === null) {
+    requestPermission();
+  }
+
   const onSaveImageAsync = async () => {
-    if (Platform.OS !== 'web') {
+    if (Platform.OS !== "web") {
       try {
         const localUri = await captureRef(imageRef, {
           height: 440,
@@ -49,7 +53,7 @@ export default function App() {
         });
         await MediaLibrary.saveToLibraryAsync(localUri);
         if (localUri) {
-          alert('Saved!');
+          alert("Saved!");
         }
       } catch (e) {
         console.log(e);
@@ -57,31 +61,27 @@ export default function App() {
     } else {
       domtoimage
         .toJpeg(imageRef.current, {
-            quality: 0.95,
-            width: 320,
-            height: 440,
-          })
-        .then(dataUrl => {
-          let link = document.createElement('a');
-          link.download = 'sticker-smash.jpeg';
+          quality: 0.95,
+          width: 320,
+          height: 440,
+        })
+        .then((dataUrl) => {
+          let link = document.createElement("a");
+          link.download = "sticker-smash.jpeg";
           link.href = dataUrl;
           link.click();
         })
-        .catch(e => {
+        .catch((e) => {
           console.log(e);
         });
     }
   };
-  
+
   const pickImageAsync = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
       allowsEditing: true,
       quality: 1,
     });
-
-    if (status === null) {
-      requestPermission();
-    }
 
     if (!result.canceled) {
       setSelectedImage(result.assets[0].uri);
