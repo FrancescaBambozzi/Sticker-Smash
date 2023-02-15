@@ -21,7 +21,7 @@ export default function EmojiSticker({ imageSize, stickerSource }) {
   //on double-tap scale the icon up 2x original size
   const onDoubleTap = useAnimatedGestureHandler({
     onActive: () => {
-      if (scaleImage.value) {
+      if (scaleImage.value && scaleImage.value <= 160) {
         scaleImage.value = scaleImage.value * 2;
       }
     },
